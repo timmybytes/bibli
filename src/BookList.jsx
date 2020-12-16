@@ -6,7 +6,7 @@ const BookList = () => {
   const [books, setBooks] = useContext(BookContext);
   return (
     <>
-      <h1>Book List</h1>
+      <h1 className='booklist-title'>Book List</h1>
       <div className='booklist'>
         {books.map(book => (
           <Book

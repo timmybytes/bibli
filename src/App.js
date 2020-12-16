@@ -12,27 +12,10 @@ const App = () => {
     setCurrentBook({ title: 'New Title', image: 'still nothing...', summary: 'The best' });
   };
 
-  const gbook = fetch('https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699')
-    .then(res => res.json())
-    .then(
-      ({
-        items: [
-          {
-            volumeInfo: { title, description },
-          },
-        ],
-      }) => {
-        // console.log(title);
-      }
-    );
-
   return (
     <BookProvider>
       <div>
-        <Header></Header>
-        <button onClick={handleClick} value='titleChange'>
-          Click
-        </button>
+        <Header />
         <AddBook />
         <BookList />
       </div>

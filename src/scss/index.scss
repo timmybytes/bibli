@@ -34,14 +34,18 @@ h1 {
   padding: 20px;
 }
 
+.booklist-title {
+  margin-left: 25px;
+}
 .book {
   border-radius: 5px;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 300px;
+  // flex-grow: 1;
+  // flex-shrink: 1;
+  // flex-basis: 300px;
+  max-width: 300px;
   justify-content: stretch;
   padding: 10px;
   .book__title {
@@ -70,12 +74,29 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
+  h1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+  }
   ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    justify-content: stretch;
     li {
-      margin-right: 10px;
+      margin-right: 25px;
     }
+  }
+}
+
+.add-book__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 400px;
+  padding: 20px;
+  input {
+    // display: inline-block;
   }
 }
