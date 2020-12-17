@@ -1,3 +1,5 @@
+// Open Library API
+// https://openlibrary.org/dev/docs/api/books
 // parsing format { isbn: { title, authors['name'], cover: { sm, md, lg }}}
 
 const book = {
