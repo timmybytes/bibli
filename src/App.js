@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import BookList from './BookList';
-import Book from './Book';
-import { BookProvider } from './BookContext';
-import Header from './Header';
-import AddBook from './AddBook';
+import { BookProvider } from './Old.BookContext';
+import MainGrid from './MainGrid';
 
 const App = () => {
   const [currentBook, setCurrentBook] = useState({ title: 'Title', image: '', summary: 'Summary' });
@@ -14,11 +11,9 @@ const App = () => {
 
   return (
     <BookProvider>
-      <div>
-        <Header />
-        <AddBook />
-        <BookList />
-      </div>
+      <>
+        <MainGrid />
+      </>
     </BookProvider>
   );
 };
